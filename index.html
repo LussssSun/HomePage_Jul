@@ -41,6 +41,7 @@
           <div class="card">
             <img id="profilepic" src="julsProfile.jpg" class="image" />
             <h2 class="wel"> *̩̩͙❆Welcome*̩̩͙‧͙₊</h2>
+            <h5 class="click" id="gf">here is my gf</h5>
             <h5>Pros:She/Any⚢</h5>
             <img id="profilepic_" src="Fyolaipic1.jpg" class="imageSkk1" />
           </div>
@@ -151,13 +152,25 @@
           document.getElementById(tabId).classList.add("active");
         });
       });
-      
+      document.getElementById("gf").onclick = function () {
+      window.location.href = "https://lusssssun.github.io/HomePage/";
+    };
     const btn=document.getElementById("meowbutton");
     btn.addEventListener("click",()=>{
       document.getElementById("profilepic").src="julspic_.jpg";
       document.getElementById("profilepic_").src="Skkpic1.jpg";
     });
   });
+    const socialButton=document.querySelectorAll(".socialButton");
+    const urls=[
+      "https://x.com/kaiserpussy_?s=21",
+      "https://open.spotify.com/user/31qlzfn3cchq4blper66xl437mfi?si=RATH5fVSQ3CZOM1FiRr8tg"
+    ];
+      socialButton.forEach((btn,index)=>{
+        btn.addEventListener("click",()=>{
+          window.open(urls[index]);
+        });
+      });
   document.getElementById("cross").addEventListener("click",()=>{
     location.reload();
   });
