@@ -4,10 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
+    <title>Lus's profile</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Allura&family=Playwrite+US+Modern:wght@100..400&family=Qwitcher+Grypen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
   <body>
-    <h1>This is a simple HTML + CSS template!</h1>
+    <h2 class="top">
+      ♡₊˚⊹
+      <button id="meowbutton" class="Meow">NIAAA!</button>
+      <button class="Cross" id="cross">─&nbsp;ㄨ</button>
+    </h2>
+    <div class="tab">
+      <div class="tab-buttons">
+        <button class="buttons" data-tab="home">Home</button>
+        <h5 class="line">♰</h5>
+        <button class="buttons" data-tab="profile">Profile</button>
+        <h5 class="line">♰</h5>
+        <button class="buttons" data-tab="social">Ships</button>
+        <h5 class="line">♰</h5>
+        <button class="buttons" data-tab="gallery">Gallery</button>
+      </div>
+    </div>
+    
+<!--homePage-->
+    <div class="tab-content active" id="home">
+      <div class="frame">
+        <div class="container">
+          <div class="card">
+            <img id="profilepic" src="lussProfile.jpg" class="image" />
+            <h2 class="wel"> *̩̩͙❆Welcome*̩̩͙‧͙₊</h2>
+            <h5>Pros:She/Any⚢</h5>
+            <img id="profilepic_" src="Fyolaipic1.jpg" class="imageSkk1" />
+          </div>
+          <div class="card">
+            <div class="align">
+              <h2 class="title">Likes:</h2>
+              <h3 class="text">Reading books<br>
+              Playing games<br>
+              Typology<br>
+              <h3 class="text">Sketching<br>
+                My gf
+              </h3>
+              <h2 class="title">DNI:</h2>
+              <h3 class="text">
+                Any phobic<br>
+                Xenophobic/Homophobic<br>
+                etc
+              </h3>
+              <h3 class="text">
+                Lolicons<br>
+                Right-wing<br>
+                Politcs
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--profile-->
+    <div class="tab-content" id="profile">
+      <div class="frame">
+        <div class="container_">
+          <div class="align">
+            <div class="card">
+              <p class="border">
+                ────୨ৎ──── .✦<br>
+              </p>
+              <img src="lusspic.jpg" class="imageLus" />
+              <p class="border">
+                ────୨ৎ──── .✦<br>
+              </p>
+
+            </div>
+          </div>
+          <div class="card_">
+            <div class="align_">
+            <h3 class="title_"></h3>
+              <h3 class="textProfile"></h3>
+              <h3 class="textProfile"><h3>
+              <h3 class="textProfile"></h3>
+              <h3 class="textProfile"></h3>
+            <h3 class="title_"></h3 >
+              <h3 class="textProfile"></h3>
+              <h3 class="textProfile"></h3>
+              <h3 class="textProfile"></h3>
+              <h3 class="textProfile"></h3>
+              <h3 class="textProfile"></h3>
+              <h3 class="textProfile"></h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--ShipPage-->
+    <div class="tab-content " id="social">
+      <div class="frame">
+        <div class="containersocial">
+          <div class="card_">
+
+
+
+          </div>
+          <div class="card"> 
+              
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Gallerypage-->
+    <div class="tab-content" id="gallery">
+      <div class="frame">
+        <div class="containergallery">
+            <div class="card">
+
+            </div>
+
+            <div class="card">
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+
+
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll(".tab-buttons button");
+      const contents = document.querySelectorAll(".tab-content");
+  
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const tabId = btn.dataset.tab;
+          contents.forEach((c) => c.classList.remove("active"));
+          document.getElementById(tabId).classList.add("active");
+        });
+      });
+      
+    const btn=document.getElementById("meowbutton");
+    btn.addEventListener("click",()=>{
+      document.getElementById("profilepic").src="lusspic_.jpg";
+      document.getElementById("profilepic_").src="Skkpic1.jpg";
+    });
+  });
+  document.getElementById("cross").addEventListener("click",()=>{
+    location.reload();
+  });
+    </script>
   </body>
 </html>
