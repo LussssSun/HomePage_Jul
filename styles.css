@@ -43,7 +43,7 @@
   font-family: "Playwrite US Modern", cursive;
   line-height: 1.4em;
   font-size: 0.8em;
-  color: rgba(86, 73, 76, 0.897);
+  color: rgba(105, 66, 74, 0.897);
 }
 .text::before {
   content: "ཐི༏ཋྀ󠀮";
@@ -52,7 +52,7 @@
 }
 .textProfile::before {
   content: "ꨄ︎";
-  color: rgb(46, 31, 36);
+  color: rgb(199, 162, 175);
   margin-right: 0.6em;
 }
 h5 {
