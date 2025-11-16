@@ -310,3 +310,28 @@ body {
   min-height: 400px;
   margin-top: 0%;
 }
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* 单栏 */
+  }
+  .container_ {
+    grid-template-columns: 1fr; /* 单栏 */
+  }
+  .containersocial {
+    grid-template-columns: 1fr;
+  }
+  .containergallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tab-buttons button {
+  margin: 0 0.14em;
+  cursor: pointer;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
