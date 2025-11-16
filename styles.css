@@ -1,3 +1,312 @@
-h1 {
+/*text style*/
+.top {
+  font-family: "Allura", cursive;
+  text-shadow: #784c60;
+  font-size: 2.1em;
+  color: rgb(86, 46, 58);
+}
+.wel {
+  font-family: "Allura", cursive;
+  line-height: 0;
+  font-size: 2.1em;
+  color: rgb(109, 67, 77);
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+.click {
+  font-family: "Allura", cursive;
+  line-height: 1em;
+  margin-bottom: 0%;
+  font-size: 1.5em;
+  color: rgb(214, 24, 81);
+}
+.title {
+  font-family: "Oregano", cursive;
+  font-style: italic;
+  font-size: 1.4em;
+  color: rgb(211, 168, 179);
+  margin-bottom: -0.5em;
+}
+.title_ {
+  font-family: "Oregano", cursive;
+  font-style: italic;
+  font-size: 1.4em;
+  color: rgb(124, 81, 98);
+  margin-bottom: -0.5em;
+}
+.text {
+  font-family: "Playwrite US Modern", cursive;
+  font-size: 0.8em;
+  color: rgb(190, 151, 163);
+}
+.textProfile {
+  font-family: "Playwrite US Modern", cursive;
+  line-height: 1.4em;
+  font-size: 0.8em;
+  color: rgba(86, 73, 76, 0.897);
+}
+.text::before {
+  content: "ཐི༏ཋྀ󠀮";
+  color: rgb(81, 38, 51);
+  margin-right: 0.6em;
+}
+.textProfile::before {
+  content: "ꨄ︎";
+  color: rgb(46, 31, 36);
+  margin-right: 0.6em;
+}
+h5 {
+  font-family: "Playwrite US Modern", cursive;
+  font-size: 0.6em;
+  color: #753c4b;
+}
+
+/*div*/
+.top {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 80%;
+  max-width: 600px;
+  margin: 1em auto;
+  height: 2em;
+  border: 3px solid #93757e;
+  background: linear-gradient(to bottom, #d7b6c2, #5f3341) 80%;
+  text-align: center;
+  margin-bottom: 0%;
+}
+.tab {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  place-items: center;
+  background: linear-gradient(to top, #d7b6c2, #5f3341) 90%;
+  border-inline: 3px solid #93757e;
+  max-width: 600px;
+}
+.card {
+  background: transparent;
+  line-height: 1.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.align {
+  display: table;
+  text-align: left;
+  padding-left: 0em;
+  text-indent: -1.5em;
+}
+.align_ {
+  display: table;
+  text-align: left;
+  padding-inline: 2em;
+}
+.align__ {
+  display: table;
+  margin-left: -3.5em;
+}
+
+/*containers*/
+.container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1.8fr;
+  height: auto;
+}
+.container_ {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1.2fr 1.6fr;
+  height: auto;
+}
+/*111111111111111*/
+.containersocial {
+  display: grid;
+  padding-inline: 2em;
+  place-items: center;
+  grid-template-columns: 1fr 1.1fr;
+  height: auto;
+}
+.containergallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+}
+
+/* images */
+.image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+.imageLus {
+  width: 170px !important;
+  height: 200px !important;
+  object-fit: cover;
+}
+.imageSkk1 {
+  width: 100px !important;
+  height: 60px !important;
+  object-fit: cover;
+}
+.imageSkk2 {
+  width: 150px !important;
+  height: 160x !important;
+  margin-top: 1em;
+  margin-left: 0.6em;
+  object-fit: cover;
+}
+.imageRimlaine {
+  display: flex;
+  align-items: left;
+  margin-block: 0;
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover;
+}
+.imageFyolai1 {
+  width: 200px !important;
+  height: 150px !important;
+  object-fit: cover;
+}
+.imageFyolai2 {
+  display: flex;
+  align-items: left;
+  width: 200px !important;
+  height: 150px !important;
+  object-fit: cover;
+}
+.imageGallery1 {
+  width: 150px;
+  height: 200px;
+  margin-bottom: 1.5em;
+  object-fit: cover;
+}
+.imageGallery2 {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+}
+.imageGallery3 {
+  width: 150px;
+  height: 155px;
+  object-fit: cover;
+}
+/*buttons*/
+.Meow {
+  height: 55px;
+  align-self: center;
+  font-size: 0.8em;
+  padding: 0.25em 1em;
+  font-family: "DynaPuff", system-ui;
+  border-radius: 25px;
+  border-color: rgb(184, 137, 153);
+  color: rgba(225, 170, 191, 0.882);
+  background: radial-gradient(circle, #5f3341, #b3939e);
+  box-shadow: 0 10px 20px rgb(111, 48, 69);
+}
+.Cross {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+}
+.button {
+  background-color: rgba(91, 63, 74, 255);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 12px;
+  font-family: "Aguafina Script", cursive;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.buttons {
+  background-color: transparent;
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 1.8em;
+  color: rgb(132, 70, 90);
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+}
+.socialButton {
+  display: block;
+  font-size: 0.7em;
+  width: 140px;
+  height: 60px;
+  font-family: "DynaPuff", system-ui;
+  border-radius: 25px;
+  border-color: rgb(252, 211, 226);
+  color: rgba(255, 255, 255, 0.882);
+  background: radial-gradient(circle, rgb(255, 215, 225), rgb(240, 189, 205));
+}
+
+/*border*/
+.border {
+  font-family: "Oregano", cursive;
+  margin: 0;
+  color: rgb(116, 76, 91);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+.border_ {
+  font-family: "Allura", cursive;
+  font-size: 1.2em;
+  margin-block: 0;
+  color: rgb(77, 43, 54);
+}
+.line {
+  color: rgb(98, 51, 64);
+  margin: 0.1em 0;
+  font-size: 1.4em;
+  padding: 0;
+}
+.bed_ {
+  font-family: "Oregano", cursive;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  color: rgb(174, 29, 75);
+}
+.bed {
+  font-family: "Allura", cursive;
+  font-size: 1.2em;
+  margin-block: 0;
+  color: rgb(167, 112, 130);
+}
+.pattern {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  color: rgb(184, 146, 157);
+}
+
+/*body*/
+.tab,
+.tab-buttons,
+.tab-content.active,
+.line {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.frame {
+  background: radial-gradient(circle, #5f3341, #d7b6c2);
+  border: 3px solid #93757e;
+  box-shadow: 0 8px 25px #5f3341;
+  width: 80%;
+  max-width: 600px;
+  margin: 1em auto; /* 居中 */
+  min-height: 400px;
+  margin-top: 0%;
 }
